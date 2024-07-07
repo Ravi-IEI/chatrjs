@@ -1,0 +1,74 @@
+const config = {
+    type: 'line', // or any other chart type
+    data: data,
+    options: {
+        plugins: {
+            legend: {
+                labels: {
+                    usePointStyle: true // enables the use of pointStyle in legend
+                }
+            }
+        },
+        scales: {
+            x: {
+                grid: {
+                    display: false // hides the x-axis grid lines
+                }
+            },
+            y: {
+                grid: {
+                    display: false // hides the y-axis grid lines
+                }
+            }
+        }
+    }
+};
+
+///////////////// 
+
+
+
+const config = {
+  type: 'line', // or any other chart type
+  data: data,
+  options: {
+    plugins: {
+      legend: {
+        position: 'bottom', // positions the legend at the bottom
+        labels: {
+          usePointStyle: true // enables the use of pointStyle in legend
+        }
+      }
+    },
+    scales: {
+      x: {
+        grid: {
+          display: false // hides the x-axis grid lines
+        }
+      },
+      y: {
+        grid: {
+          display: false // hides the y-axis grid lines
+        }
+      }
+    }
+  }
+};
+
+
+
+
+const labels = Utils.months({count: 7});
+const data = {
+  labels: labels,
+  datasets: [{
+    label: 'My First Dataset',
+    data: [65, 59, 80, 81, 56, 55, 40],
+    fill: true,
+    borderColor: 'rgb(75, 192, 192)',
+    backgroundColor : 'rgb(75, 192, 192, 0.2)',
+    tension: 0.25,
+    borderWidth : 1.5,
+   pointRadius : 0,
+  }]
+};
